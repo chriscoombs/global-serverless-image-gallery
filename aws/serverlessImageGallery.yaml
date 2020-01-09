@@ -170,7 +170,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       CodeUri: 
         Bucket: !Ref BucketName
         Key: upload/UploadS3.zip
@@ -204,7 +204,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Policies:
         - Version: '2012-10-17'
           Statement:
@@ -247,7 +247,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Policies:
         - Version: '2012-10-17'
           Statement:

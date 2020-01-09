@@ -153,7 +153,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       InlineCode: 
         "const AWS = require('aws-sdk');\n
           const s3 = new AWS.S3({apiVersion: '2006-03-01'});\n
@@ -222,7 +222,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Policies:
         - Version: '2012-10-17'
           Statement:
@@ -319,7 +319,7 @@ Resources:
     Type: 'AWS::Serverless::Function'
     Properties:
       Handler: index.handler
-      Runtime: nodejs6.10
+      Runtime: nodejs10.x
       Policies:
         - Version: '2012-10-17'
           Statement:
